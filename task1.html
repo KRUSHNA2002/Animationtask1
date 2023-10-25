@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #snake
+    {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: red;
+        position: relative;
+        animation-name: ball1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+
+    @keyframes ball1
+    {
+        0% {top: 0px;left:0%;background-color: yellow;transform: scale(1.5);}
+        10% {top: 500px;left: 0%;background-color: yellow;transform: scale(1.0);}
+        20% {top: 500px;left: 20%;transform: scale(1.5);}
+        30% {top: 0px;left: 20%;transform: scale(1.0);}
+        40% {top: 0px;left: 40%;transform: scale(1.5);}
+        50% {top: 500px;left: 40%;transform: scale(1.0);}
+        60% {top: 500px;left: 60%;background-color: black;transform: scale(1.5);}
+        70% {top: 0px;left: 60%;transform: scale(1.0);}
+        80% {top: 0px;left: 80%;transform: scale(1.5);}
+        90% {top: 500px;left: 80%;transform: scale(1.0);}
+        99% {top: 500px;left: 100%;transform: scale(1.5);}
+    }
+
+    #snake:hover
+    {
+        transform: scale(1.5);
+        transition: .3s;
+    }
+
+</style>
+<body>
+    
+  <div id="snake">
+
+  </div>
+
+</body>
+</html>
